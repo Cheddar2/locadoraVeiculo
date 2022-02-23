@@ -1,13 +1,13 @@
 package br.com.fundatec.locadoraveiculo.models;
 
 public class Endereco {
-    String logradouro;
-    int numero;
-    String complemento;
-    String bairro;
-    String cidade;
-    String uf;
-    long cep;
+    private String logradouro;
+    private int numero;
+   private String complemento;
+    private String bairro;
+    private String cidade;
+    private String uf;
+    private long cep;
 
     public Endereco(String logradouro, int numero, String complemento, String bairro, String cidade, String uf, long cep) {
         this.logradouro = logradouro;

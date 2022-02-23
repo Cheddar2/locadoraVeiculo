@@ -1,49 +1,50 @@
 package br.com.fundatec.locadoraveiculo.models;
 
+import br.com.fundatec.locadoraveiculo.enums.TipoVeiculo;
+
 public class Veiculo {
-    String logradouro;
-    int numero;
-    String complemento;
-    String bairro;
-    String cidade;
-    String uf;
-    long cep;
+            private TipoVeiculo tipoVeiculo;
+            private String placa;
+            private String marca;
+            private String modelo;
+            private  float kilometragem;
+            private double  valorkmrodado;
+            private double valordiaria;
 
-    public Veiculo(String logradouro, int numero, String complemento, String bairro, String cidade, String uf, long cep) {
-        this.logradouro = logradouro;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.uf = uf;
-        this.cep = cep;
+    public Veiculo(TipoVeiculo tipoVeiculo, String placa, String marca, String modelo, float kilometragem, double valorkmrodado, double valordiaria) {
+        this.tipoVeiculo = tipoVeiculo;
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.kilometragem = kilometragem;
+        this.valorkmrodado = valorkmrodado;
+        this.valordiaria = valordiaria;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public TipoVeiculo getTipoVeiculo() {
+        return tipoVeiculo;
+    }
+    public String getPlaca() {
+        return placa;
     }
 
-    public int getNumero() {
-        return numero;
+    public String getMarca() {
+        return marca;
     }
 
-    public String getComplemento() {
-        return complemento;
+    public String getModelo() {
+        return modelo;
     }
 
-    public String getBairro() {
-        return bairro;
+    public float getKilometragem() {
+        return kilometragem;
     }
 
-    public String getCidade() {
-        return cidade;
+    public double getValorkmrodado() {
+        return valorkmrodado;
     }
 
-    public String getUf() {
-        return uf;
-    }
-
-    public long getCep() {
-        return cep;
+    public double getValordiaria() {
+        return valordiaria;
     }
 }

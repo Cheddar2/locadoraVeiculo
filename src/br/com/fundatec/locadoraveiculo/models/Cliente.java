@@ -12,11 +12,11 @@ import br.com.fundatec.locadoraveiculo.enums.TipoPessoa;
     public class Cliente {
         private String nome;
         private TipoPessoa tipoPessoa;
-        long documento;
-        TipoDocumento tipoDocumento;
-        String razaoSocial;
-        long cnpj;
-        Endereco endereco;
+       private  long documento;
+        private TipoDocumento tipoDocumento;
+        private String razaoSocial;
+        private long cnpj;
+        private Endereco endereco;
 
         public Cliente(String nome, TipoPessoa tipoPessoa, long documento, TipoDocumento tipoDocumento, String razaoSocial,
                        long cnpj, Endereco endereco) {
@@ -27,6 +27,9 @@ import br.com.fundatec.locadoraveiculo.enums.TipoPessoa;
             this.razaoSocial = razaoSocial;
             this.cnpj = cnpj;
             this.endereco = endereco;
+        }
+
+        public Cliente(String nome, TipoPessoa tipoPessoa, long documento, TipoDocumento tipoDocumento, String razaoSocial, long cnpj) {
         }
 
         public String getNome() {
