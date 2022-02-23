@@ -59,7 +59,25 @@ public class TelaClientes {
             scan.nextLine();
             System.out.println("Informe a razão Social");
             razaoSocial = scan.nextLine();
-
+            System.out.println("passa endereço");
+            String logradouro = scan.nextLine();
+            System.out.println("passa numero");
+            int numero = scan.nextInt();
+            scan.nextLine();
+            System.out.println("passa complemento.");
+            String complemento = scan.nextLine();
+            System.out.println("passa cidade.");
+            String cidade = scan.nextLine();
+            System.out.println("passa bairro.");
+            String bairro = scan.nextLine();
+            System.out.println("passa unidade federal.");
+            String uf = scan.next().toUpperCase();
+            System.out.println("passa CEP.");
+            long cep = scan.nextLong();
+            Endereco endereco = new Endereco(logradouro, numero, complemento, bairro, cidade, uf, cep);
+            Cliente cliente = new Cliente(nome, tipoPessoa, documento, tipoDocumento, razaoSocial, cnpj, endereco);
+            System.out.println(cliente.getTipoPessoa());
+            dadosClientes.add(cliente);
 
 
 
