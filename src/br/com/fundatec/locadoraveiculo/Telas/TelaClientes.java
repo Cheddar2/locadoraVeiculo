@@ -75,7 +75,7 @@ public class TelaClientes {
             System.out.println("passa CEP.");
             long cep = scan.nextLong();
             Endereco endereco = new Endereco(logradouro, numero, complemento, bairro, cidade, uf, cep);
-            Cliente cliente = new Cliente(nome, tipoPessoa, documento, tipoDocumento, razaoSocial, cnpj, endereco);
+            Cliente cliente = new Cliente( tipoPessoa, razaoSocial, cnpj, endereco);
             System.out.println(cliente.getTipoPessoa());
             dadosClientes.add(cliente);
 
@@ -115,7 +115,7 @@ public class TelaClientes {
             long cep = scan.nextLong();
 
             Endereco endereco = new Endereco(logradouro, numero, complemento, bairro, cidade, uf, cep);
-            Cliente cliente = new Cliente(nome, tipoPessoa, documento, tipoDocumento, razaoSocial, cnpj, endereco);
+            Cliente cliente = new Cliente(nome, tipoPessoa, documento, tipoDocumento,  endereco);
             System.out.println(cliente.getTipoPessoa());
             dadosClientes.add(cliente);
 

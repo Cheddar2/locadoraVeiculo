@@ -1,5 +1,9 @@
 package br.com.fundatec.locadoraveiculo.Telas;
 
+import br.com.fundatec.locadoraveiculo.bancodedados.DadosVeiculos;
+import br.com.fundatec.locadoraveiculo.models.Veiculo;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class TelaLocacoes {
@@ -29,6 +33,17 @@ public class TelaLocacoes {
 
             }
         }
+
+
+    }
+
+    private void cadastrarlocacao() {
+        List<Veiculo> veiculos = DadosVeiculos.make().getVeiculos();
+        for (int i = 0; i < ((List<?>) veiculos).size(); i++) {
+            Veiculo veiculo = veiculos.get(i);
+            System.out.println(String.format("   >>> [%d] --> %s", i, veiculo));
+        }
+
     }
 }
 

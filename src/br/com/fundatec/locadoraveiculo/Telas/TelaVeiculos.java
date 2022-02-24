@@ -54,7 +54,6 @@ public class TelaVeiculos {
         String placa = scan.nextLine();
 
 
-
         System.out.println("passa marca");
         String marca = scan.nextLine();
         System.out.println("passa o modelo");
@@ -81,8 +80,8 @@ public class TelaVeiculos {
 
 
         }
+
     }
 }
-
 
 

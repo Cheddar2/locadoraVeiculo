@@ -18,8 +18,20 @@ import br.com.fundatec.locadoraveiculo.enums.TipoPessoa;
         private long cnpj;
         private Endereco endereco;
 
-        public Cliente(String nome, TipoPessoa tipoPessoa, long documento, TipoDocumento tipoDocumento, String razaoSocial,
+        public Cliente(String nome, TipoPessoa tipoPessoa, long documento, TipoDocumento tipoDocumento,
+                        Endereco endereco) {
+            this.tipoPessoa = tipoPessoa.FISICA;
+            this.nome = nome;
+            this.tipoPessoa = tipoPessoa;
+            this.documento = documento;
+            this.tipoDocumento = tipoDocumento;
+
+
+            this.endereco = endereco;
+        }
+        public Cliente( TipoPessoa tipoPessoa,   String razaoSocial,
                        long cnpj, Endereco endereco) {
+            this.tipoPessoa = tipoPessoa.JURIDICA;
             this.nome = nome;
             this.tipoPessoa = tipoPessoa;
             this.documento = documento;
@@ -90,6 +102,7 @@ import br.com.fundatec.locadoraveiculo.enums.TipoPessoa;
 
 
         }
+
 
 
 
